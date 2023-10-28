@@ -1,0 +1,38 @@
+.brand-img{
+    display: flex;
+    justify-content: center;
+}
+
+.brand-name{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+}
+.brand-namee{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.header{
+    padding: 50px;
+}
+
+.navbar-nav{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.bg-blue{
+    background: linear-gradient(to right, #002080,#4d79ff );
+}
+
+.foot > div > p{
+    color: white !important;
+}
+
+footer{
+    padding: 20px;
+}
+.text-gray{
+    color: #d9d9d9;
+}
