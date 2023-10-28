@@ -36,3 +36,6 @@ footer{
 .text-gray{
     color: #d9d9d9;
 }
+.text-reset{
+    text-decoration: none !important;
+}

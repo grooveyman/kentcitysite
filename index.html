@@ -104,7 +104,7 @@
         </nav>
       </div>
     </div>
-
+    <div class="" id="map"></div>
     <!-- the contents will follow here -->
 
     <!-- end of contents -->
@@ -119,7 +119,7 @@
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #3b5998"
-              href="#!"
+              href="https://web.facebook.com/profile.php?id=100093233367550"
               role="button"
               ><i class="fab fa-facebook-f"></i
             ></a>
@@ -128,85 +128,51 @@
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #55acee"
-              href="#!"
+              href="https://twitter.com/cackencityfwc"
               role="button"
               ><i class="fab fa-twitter"></i
-            ></a>
-
-            <!-- Google -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #dd4b39"
-              href="#!"
-              role="button"
-              ><i class="fab fa-google"></i
             ></a>
 
             <!-- Instagram -->
             <a
               class="btn text-white btn-floating m-1"
               style="background-color: #ac2bac"
-              href="#!"
+              href="https://instagram.com/kentcity.fwc.cac?igshid=OGQ5ZDc2ODk2ZA"
               role="button"
               ><i class="fab fa-instagram"></i
             ></a>
 
-            <!-- Linkedin -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #0082ca"
-              href="#!"
-              role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #333333"
-              href="#!"
-              role="button"
-              ><i class="fab fa-github"></i
-            ></a>
+             <!-- Youtube -->
+             <a
+             class="btn text-white btn-floating m-1"
+             style="background-color: #d43030"
+             href="https://www.youtube.com/channel/UC1fF0Q_0rLLO6P93vOVWZ2Q"
+             role="button"
+             ><i class="fab fa-youtube"></i
+           ></a>
+
           </section>
           <!-- Section: Social media -->
 
           <!-- Section: Links  -->
           <!-- Grid row -->
           <div class="row mt-3 foot">
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4 text-gray">Products</h6>
-              <p>
-                <a href="#!" class="text-reset">Angular</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">React</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Vue</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Laravel</a>
-              </p>
-            </div>
-            <!-- Grid column -->
 
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4 text-gray">Useful links</h6>
+              <h6 class="text-uppercase fw-bold mb-4 text-gray">Useful Links</h6>
               <p>
-                <a href="#!" class="text-reset">Pricing</a>
+                <a href="#!" class="text-reset">Gallery</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Settings</a>
+                <a href="#!" class="text-reset">About</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Orders</a>
+                <a href="#!" class="text-reset">Sermons</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Help</a>
+                <a href="#!" class="text-reset">History</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -216,21 +182,24 @@
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4 text-gray">Contact</h6>
               <p>
-                <i class="fas fa-home me-3 text-secondary"></i> New York, NY
-                10012, US
+                <i class="fas fa-home me-3 text-secondary"></i> Si Podemos, Kentinkrono
               </p>
               <p>
                 <i class="fas fa-envelope me-3 text-secondary"></i>
-                info@example.com
+                info@cacfwckentcity.com
               </p>
               <p>
                 <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88
               </p>
-              <p>
-                <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89
-              </p>
             </div>
             <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Map -->
+                <!-- <div class="" id="map"></div> -->
+              </div>
+              <!-- Grid column -->
           </div>
           <!-- Grid row -->
         </div>
@@ -255,5 +224,33 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
   </body>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDztZ09qG1QP0u8lleX5vI5_ZbHjeF4nE8&callback=initMap">
+</script>
+
+<script type="text/javascript">
+    let marker;
+      function initMap() {
+        //latitude and longitude of Ghana
+        const myLatLng = {
+            lat: 7.9465,
+            lng: -1.0
+        };
+        map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 8,
+            center: myLatLng,
+            fullscreenControl: false,
+            zoomControl: true,
+            streetViewControl: false
+        });
+
+        marker = new google.maps.Marker({
+            position: myLatLng,
+            map,
+            title: "My location",
+        });
+
+    }
+</script>
 </html>
