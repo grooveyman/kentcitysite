@@ -39,3 +39,65 @@ footer{
 .text-reset{
     text-decoration: none !important;
 }
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.back {
+    /* background-image: linear-gradient(to right, red, yellow); */
+    justify-content: center;
+    display: flex;
+    padding: 6%;
+}
+
+.items {
+    padding: 10px;
+    /* background-color: green; */
+    color: white;
+    text-align: center;
+}
+
+
+.loader {
+    text-align: center;
+    border: 11px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 11px solid #3498db;
+    width: 75px;
+    height: 75px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    /* padding-bottom: 10px; */
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1550px) {
+    .side {
+        /* background-color: green; */
+        position: relative;
+        bottom: 33px;
+    }
+}
