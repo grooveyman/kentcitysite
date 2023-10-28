@@ -30,6 +30,13 @@
     />
     <script src="assets/bootstrap-5.0.2-dist/js/swal.js"></script>
   </head>
+
+  <style>
+    #map{
+        height: 400px;
+        width: 100%;
+    }
+  </style>
   <body>
     <div class="container">
       <div class="header">
@@ -107,7 +114,7 @@
         </nav>
       </div>
     </div>
-    <div id="map"></div>
+  
     <!-- the contents will follow here -->
 
     <!-- end of contents -->
@@ -200,6 +207,7 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Map -->
+                <div id="map"></div>
                 <!-- <div class="" id="map"></div> -->
               </div>
               <!-- Grid column -->
@@ -227,35 +235,50 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDztZ09qG1QP0u8lleX5vI5_ZbHjeF4nE8&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhQ2qH15yibtB7MzeB5RvJS8S-tiG7Uc0&callback=initMap">
     </script>
     <script>
-        //   initMap();
-        var map, marker;
-          function initMap() {
-            //latitude and longitude of Ghana
-            const myLatLng = {
-                lat: 7.9465,
-                lng: -1.0
-            };
-            map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 8,
-                center: myLatLng,
-                fullscreenControl: false,
-                zoomControl: true,
-                streetViewControl: false
-            });
-    
-            marker = new google.maps.Marker({
-                position: myLatLng,
-                map,
-                title: "My location",
-            });
-    
+    //   initMap();
+    // var map, marker;
+    function initMap(){
+        var options = {
+            zoom:8,
+            canter:{lat:7.9465, lng:-1.0},
+            zoomControl:true
         }
-    
-      
-    </script>
+
+        var map = new google.maps.Map(document.getElementById("map"), options);
+
+        //add marker
+        var marker = new google.maps.Marker({
+            position:{lat:7.9465, lng:-1.0},
+            map:map
+        })
+    }
+    //   function initMap() {
+    //     //latitude and longitude of Ghana
+    //     const myLatLng = {
+    //         lat: 7.9465,
+    //         lng: -1.0
+    //     };
+    //     map = new google.maps.Map(document.getElementById("map"), {
+    //         zoom: 8,
+    //         center: myLatLng,
+    //         fullscreenControl: false,
+    //         zoomControl: true,
+    //         streetViewControl: false
+    //     });
+
+    //     marker = new google.maps.Marker({
+    //         position: myLatLng,
+    //         map,
+    //         title: "My location",
+    //     });
+
+    // }
+
+  
+</script>
   </body>
 
 
