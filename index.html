@@ -16,10 +16,13 @@
       href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
     <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/bootstrap-5.0.2-dist/js/jquery.js"></script>
+    <!-- <script src="assets/pscript.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="assets/pstyle.scss"/>
 
 
     <link
@@ -35,6 +38,9 @@
 </head>
 
 <body>
+  <div class='body'>
+    <div id="particle"></div>
+  </div>
     <div class="container">
         <div class="header">
           <div>
@@ -113,7 +119,6 @@
       </div>
 
      <section>
-      <!-- <div class="container-fluid"> -->
         <!-- carousel-->
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -137,6 +142,30 @@
           </button>
         </div>
       <!-- </div> -->
+     </section>
+
+     <!--at 50 celebration -->
+     <section class="section">
+      <div class="container">
+        <div class="text-center title">
+          <h4>5 Years Celebration</h4>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- @5 logo-->
+            <div class="" style="display: flex; justify-content: center;">
+              <img src="assets/images/5y.jpg" width="350px" height="350px"/>
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo atque aut unde quaerat numquam qui, exercitationem provident neque! Odit quas quisquam, ipsam eveniet tempore obcaecati ut ducimus consectetur voluptas aliquam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sit qui magni quo pariatur velit necessitatibus laborum, vero beatae repellendus explicabo esse voluptatibus quaerat fugit! Non sit impedit corporis! Pariatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quis? Dolor a est nulla! Aut ea atque asperiores nam accusantium cum harum, ab exercitationem ratione reprehenderit, optio ipsum porro quae.
+
+            </p>
+            <button class="primary-btn">View Schedule</button><button class="secondary-btn">How It Started</button>
+          </div>
+        </div>
+      </div>
      </section>
 
       <footer class="text-center text-lg-start bg-blue text-muted">
@@ -286,5 +315,6 @@
     }
 
 </script>
+<script src="assets/pscript.js" ></script>
 </body>
 </html>

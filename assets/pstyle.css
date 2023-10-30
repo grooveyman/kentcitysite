@@ -1,0 +1,38 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: #212121;
+}
+
+@keyframes fallen_1 {
+  100% {
+    top: calc(100% + 20px);
+    transform: rotateX(-916deg) rotateY(-942deg) rotateZ(-1033deg);
+  }
+}
+@keyframes fallen_2 {
+  100% {
+    top: calc(100% + 20px);
+    transform: rotateX(893deg) rotateY(618deg) rotateZ(789deg);
+  }
+}
+@keyframes fallen_3 {
+  100% {
+    top: calc(100% + 20px);
+    transform: rotateX(553deg) rotateY(-921deg) rotateZ(-1177deg);
+  }
+}
+@keyframes fallen_4 {
+  100% {
+    top: calc(100% + 20px);
+    transform: rotateX(-689deg) rotateY(952deg) rotateZ(592deg);
+  }
+}
+@keyframes fallen_5 {
+  100% {
+    top: calc(100% + 20px);
+    transform: rotateX(-1062deg) rotateY(-598deg) rotateZ(1415deg);
+  }
+}
+
+/*# sourceMappingURL=pstyle.css.map */
